@@ -1,0 +1,248 @@
+body {
+    font-family: 'Cardo', serif;
+    font-size: 18px;
+    background-color: rgb(141, 141, 141);
+}
+
+div, p {
+    font-family: 'Cardo', serif;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: #000000;
+}
+
+/*home page*/
+
+#home {
+    height: calc(100vh);
+    align-items: center;
+    display: flex;
+}
+
+#home-body {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 30%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#name-text{
+    font-size: 19px;
+    color: rgb(74, 58, 148);
+    font-weight: bold;
+}
+
+#view-portfolio {
+    border: 2px solid white;
+    width: 40%;
+    margin: 0 auto;
+    padding: 9px 8px 9px 8px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#portfolio-link {
+    text-decoration: none;
+}
+
+#view-portfolio:hover {
+    border-color: red;
+}
+
+/* navigation bar */
+
+#navbar {
+    background-color: #272727;
+    font-family: 'Cardo', serif;
+    margin-bottom: 35px;
+
+}
+
+#links {
+    text-align: right;
+    color: #fff;
+    padding: 5px 20px 5px 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+#link {
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #fff;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* PORTFOLIO */
+
+
+.group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project {
+    width: 96%;
+    margin: 0 auto;
+}
+
+.item {
+    margin: 0;
+    padding: 5px 0 5px 0;
+    width: 100%;
+}
+
+.left {
+    background-color: rgb(252, 252, 252);
+}
+
+.right {
+    background-color: rgb(212, 212, 212);
+}
+ /*---text decoration*/
+
+.project-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+}
+
+.tech-used {
+    font-size: 15px;
+}
+
+.repo-links {
+    text-align: center;
+}
+
+.repo-live-links, .repo-live-links:visited {
+    text-decoration: none;
+    color: rgb(32, 0, 177);
+}
+
+/*CONTACT FORM SECTION*/
+
+#bottom-section {
+    margin-bottom: 50px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* img {
+    resize: both;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    margin: auto;
+}
+/* .box {
+    justify-content: center;
+    width: 85%;
+    margin:  26px auto 26px;
+    background: #d3c8c8;
+    padding: 15px;
+    border: 3px solid white;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px 8px #000000;
+}
+
+
+.center-pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+form {
+    margin: 0 auto 8px;
+    width: 85%;
+}
+
+form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: rgb(66, 66, 66);
+    font-family: 'Cardo', serif;
+}
+
+form input {
+    margin: 0 auto 0;
+    width: 80%;
+}
+
+form input[type=text] {
+    color: #000;
+    font-size: 15px;
+    margin-bottom: 4px;
+} */
+
+
+
+@media all and (min-width: 800px) {
+    
+    /* header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+        margin-bottom: 40px;
+    }
+
+    header h1 {
+        margin: 14px 0;
+        padding-top: 0;
+    }
+
+    header nav {
+        margin-top: 8px;
+    }
+
+    header nav ul li a:hover {
+        color: #bdbdbd;
+    }
+
+    body {
+        font-size: 22px;
+    }
+
+    .box {
+        width: 70%;
+    }
+
+    .group {
+        flex-direction: row;
+    }
+
+    form label {
+        font-size: 23px;
+    }
+
+    form input {
+        width: auto;
+    }
+
+    form input[type=text] {
+        font-size: 22px;
+    } */
+
+
+}
