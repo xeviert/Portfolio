@@ -19,17 +19,12 @@
 		<section id="home">
 
 			<div id="home-body">
-				<h2>WELCOME TO MY PAGE</h2>
+				<h2>WELCOME!</h2>
 				<p>
-					My name is <span id="name-text">Xevier Turrubiartes</span> and I am a full-stack developer from Texas.
-					<div id="view-portfolio"><a id="portfolio-link" href="#portfolio">View Portfolio</a></div>
+					My name is <span id="name-text">Xevier Turrubiartes</span> and I am a full-stack developer from Texas.<br>
+					<a id="portfolio-link" href="#portfolio"><button id="view-portfolio"><p id="text-arrow">View Portfolio</p><img id="arrow" src="images/arrow.png" width="30" height="30"></button></a>
 				</p>
 
-
-				<!-- <p>
-					I am a software developer from Houston, living in Austin, TX. I was a financial advisor for five years but decided to change career paths and gain a new skill which I am passionate about. Please take a look through my website and contact me if you have any questions, want to collaborate, or to simply say 
-					<a href="#contact">hi</a>!
-				</p> -->
 			</div>
 		</section>
 		
@@ -44,8 +39,31 @@
 			</nav>
 		</div>
 
+		<section>
+			<h2 id="about" class="content">About Myself</h2>
+			<div id="about-myself">
+				<img src="images/me.jpg" alt="myself" class="center-pic">
+		
+				<p>My first experience with web development was on MySpace when I would spend countless hours researching and editing HTML code to make my page stand out from the rest of my friends. I've always had an interest in building and creating things whether it's music or programming projects. I am excited to put my knowledge in web development to good use and make a career out of it.</p>
+				
+				<p>Some of my hobbies outside of programming include:</p>
+			
+					<ul id="hobbies">
+						<li>- playing drums</li>
+						<li>- kick-boxing</li>
+						<li>- drawing</li>
+					</ul>
+
+					
+					<br>
+
+					<p>If you are interested in hiring a new developer for your company or have any projects that I might be able to help you with, don't hesitate to <a href="#contact">contact me!</a></p>
+					<br>
+			</div>
+		</section>
+
 				<section>	
-					<h2 id="portfolio">My Portfolio</h2>
+					<h2 id="portfolio">MY PORTFOLIO</h2>
 					<div class="group">
 
 						<div class="item left">
@@ -55,8 +73,8 @@
 								<p class="tech-used">Front-end: JavaScript, React, HTML5, CSS3
 									<br>Back-end: JavaScript, Node.js, Express.js, PostgreSQL</p>
 									<p class="repo-links">
-										<a class="repo-live-links" href="https://neighbr.vercel.app/">Live App | </a>
-										<a class="repo-live-links" href="https://github.com/xeviert/Neighbr">Client Repo | </a>
+										<a class="repo-live-links" href="https://neighbr.vercel.app/">Live App</a> | 
+										<a class="repo-live-links" href="https://github.com/xeviert/Neighbr">Client Repo</a> | 
 										<a class="repo-live-links" href="https://github.com/xeviert/neighbr-api">Server Repo</a>
 									</p>
 							</div>
@@ -70,8 +88,8 @@
 								<p class="tech-used">Front-end: JavaScript, React, HTML5, CSS3
 									<br>Back-end: JavaScript, Node.js, Express.js, PostgreSQL</p>
 									<p class="repo-links">
-										<a class="repo-live-links" href="spaced-repetition-plum.vercel.app/">Live App | </a>
-										<a class="repo-live-links" href="https://github.com/xeviert/spaced-repetition">Client Repo | </a>
+										<a class="repo-live-links" href="spaced-repetition-plum.vercel.app/">Live App</a> |
+										<a class="repo-live-links" href="https://github.com/xeviert/spaced-repetition">Client Repo</a> | 
 										<a class="repo-live-links" href="https://github.com/xeviert/spaced-repetition-api">Server Repo</a>
 									</p>
 							</div>
@@ -86,8 +104,8 @@
 								<p class="tech-used">Front-end: JavaScript, React, HTML5, CSS3
 									<br>Back-end: JavaScript, Node.js, Express.js, PostgreSQL</p>
 									<p class="repo-links">
-										<a class="repo-live-links" href="">Live App | </a>
-										<a class="repo-live-links" href="https://github.com/xeviert/mass-client">Client Repo | </a>
+										<a class="repo-live-links" href="">Live App</a> | 
+										<a class="repo-live-links" href="https://github.com/xeviert/mass-client">Client Repo</a> | 
 										<a class="repo-live-links" href="https://github.com/xeviert/mass-api">Server Repo</a>
 									</p>
 							</div>
@@ -102,8 +120,8 @@
 								<p class="tech-used">Front-end: JavaScript, React, HTML5, CSS3
 									<br>Back-end: JavaScript, Node.js, Express.js, PostgreSQL</p>
 									<p class="repo-links">
-										<a class="repo-live-links" href="https://petful-client-hazel.vercel.app/">Live App | </a>
-										<a class="repo-live-links" href="https://github.com/xeviert/petful-client">Client Repo | </a>
+										<a class="repo-live-links" href="https://petful-client-hazel.vercel.app/">Live App</a> | 
+										<a class="repo-live-links" href="https://github.com/xeviert/petful-client">Client Repo</a> | 
 										<a class="repo-live-links" href="https://github.com/xeviert/petful-server">Server Repo</a>
 									</p> 
 							</div>
@@ -116,14 +134,15 @@
 				<section>
 					<div id="bottom-section">
 
-						<h2 id="contact">Contact Me</h2>	
+						<h2 id="contact">CONTACT ME</h2>	
+						<img src="images/austin.jpg" alt="austin skyline" class="center-pic">
 						
-						<p>I hope to hear from you soon! Please contact or follow me:</p>
+						<p id="contact-text">I hope to hear from you soon! Please contact or follow me:</p>
 						
 						<div class="contacts">
-							<li>- <a href="https://github.com/xeviert" target="_blank">GitHub</a></li>
-							<li>- <a href="https://www.linkedin.com/in/xevierturrubiartes/" target="_blank">LinkedIn</a></li>
-							<li>- email: <em>xevierturrubiartes@gmail.com</em></li>
+							<a class="logos" href="https://github.com/xeviert" target="_blank"><img src="images/GitHub.png" width="100" height="100"></a>
+							<a class="logos" href="https://www.linkedin.com/in/xevierturrubiartes/" target="_blank"><img src="images/linkedin.png" width="100" height="100"></a>
+							<a class="logos" href="mailto:xevierturrubiartes@gmail.com" target="_blank"><img src="images/email.png" width="110" height="110"></a>
 						</div>
 						
 						
@@ -134,48 +153,11 @@
 							<input type="text" name="_replyto">
 							<label>Message:</label>
 							<textarea name="message"></textarea>
-							<button type="submit">Send</button>
+							<button id="btn" type="submit">Send</button>
 						</form>
-						
 					</div>
 				</section>
-<!-- 	
-			<section>
-				<div>
-					<img src="images/me.jpg" alt="myself" class="center-pic">
-			
-					<h2 id="about">About Myself</h2>
-					<p>My first experience with web development was on MySpace when I would spend countless hours researching and editing HTML code to make my page stand out from the rest of my friends. I've always had an interest in building and creating things whether it's music or a website for my band.</p>
-					<br>
 
-					<p>With the help from Thinkful, I am excited to put my knowledge in web development to good use and make a career out of it.</p>
-					<br>
-					
-					<p>Some of my hobbies outside of web dev include:</p>
-					<br>
-					<ul>
-                        <li>Playing drums for different bands.</li>
-                        <li>Lifting weights or kick-boxing.</li>
-                        <li>Drawing and painting.</li>
-                        </ul>
-						<br>
-						<p>Services Offered:</p>
-						<ul>
-							<li>Dynamic Web Development</li>
-							<li>Responsive Web Design</li>
-							<li>Website Redesign</li>
-							<li>Website Management</li>
-						</ul>
-						<br>
-
-						<p>If you are interested in hiring a new developer for your company or have any projects that I might be able to help with, don't hesitate to contact me!</p>
-                        <br>
-				</div>
-			</section>
-		
-            <hr>
-		
-			 -->
 	</main>
 </body>
 </html>

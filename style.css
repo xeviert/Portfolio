@@ -1,17 +1,20 @@
 body {
     font-family: 'Cardo', serif;
     font-size: 18px;
-    background-color: rgb(141, 141, 141);
+    background-color: rgb(134, 134, 134);
 }
 
 div, p {
-    font-family: 'Cardo', serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
 }
 
 h2 {
     text-align: center;
     font-family: 'Oswald', sans-serif;
     color: #000000;
+    font-size: 34px;
 }
 
 /*home page*/
@@ -26,26 +29,39 @@ h2 {
     color: #fff;
     text-align: center;
     padding-bottom: 30%;
-    width: 80%;
+    width: 96%;
     margin: 0 auto;
 }
 
 #name-text{
-    font-size: 19px;
+    font-size: 22px;
     color: rgb(74, 58, 148);
-    font-weight: bold;
 }
 
 #view-portfolio {
     border: 2px solid white;
-    width: 40%;
-    margin: 0 auto;
-    padding: 9px 8px 9px 8px;
+    width: 55%;
+    margin: 28px auto 0;
+    padding: 4px 2px 1px 2px;
     border-radius: 12px;
+    font-size: 22px;
+    background-color: rgba(255, 255, 255, 0);
     cursor: pointer;
 }
 
+#text-arrow {
+    margin: 0 0;
+    color: white;
+}
+
+#arrow {
+    transform: rotate(180deg);
+    -webkit-filter: invert(100%);
+    margin: 0;
+}
+
 #portfolio-link {
+    margin: auto;
     text-decoration: none;
 }
 
@@ -65,7 +81,7 @@ h2 {
 #links {
     text-align: right;
     color: #fff;
-    padding: 5px 20px 5px 0;
+    padding: 15px 20px 15px 0;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -83,6 +99,25 @@ a:visited {
     position: fixed;
     top: 0;
     width: 100%;
+}
+
+/* ABOUT ME */
+
+#about-myself {
+    width: 92%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+#hobbies {
+    text-align: left;
+    width: 60%;
+    margin: 0 auto;
 }
 
 /* PORTFOLIO */
@@ -117,11 +152,15 @@ a:visited {
 .project-title {
     font-weight: bold;
     text-align: center;
-    font-size: 22px;
+    font-size: 25px;
+}
+
+.project-description {
+    font-size: 16px;
 }
 
 .tech-used {
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .repo-links {
@@ -129,32 +168,77 @@ a:visited {
 }
 
 .repo-live-links, .repo-live-links:visited {
-    text-decoration: none;
-    color: rgb(32, 0, 177);
+    color: rgb(0, 41, 177);
+    margin: 0 2px;
+    font-size: 18px;
 }
 
 /*CONTACT FORM SECTION*/
 
 #bottom-section {
-    margin-bottom: 50px;
     width: 95%;
     margin: 0 auto;
+    color: white;
 }
 
-li {
-    list-style-type: none;
-}
-
-/* img {
+img {
     resize: both;
     margin-left: auto;
     margin-right: auto;
 }
 
-p {
-    margin: auto;
+.center-pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-radius: 8px;
 }
-/* .box {
+
+#contact-text {
+    text-align: center;
+}
+.contacts {
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.logos {
+    margin: 0 4px;
+}
+
+form {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+input, textarea {
+    width: 98%;
+    margin: 3px 0;
+    border-radius: 10px;
+    border-style: none;
+}
+
+#btn {
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+    padding: 7px 12px;
+    background-color: #27272700;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    border-radius: 12px;
+}
+
+
+/* 
+
+.box {
     justify-content: center;
     width: 85%;
     margin:  26px auto 26px;
@@ -163,14 +247,6 @@ p {
     border: 3px solid white;
     border-radius: 10px;
     box-shadow: 5px 10px 10px 8px #000000;
-}
-
-
-.center-pic {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
 }
 
 form {
