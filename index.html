@@ -4,11 +4,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Xevier Turrubiartes : Software Engineer</title>
+	<title>Xevier T: Software Engineer</title>
+	<link rel="shortcut icon" type="image/jpg" href="/images/favicon.png"/>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet" type="text/css">
 	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script src="https://kit.fontawesome.com/8e5f992880.js" crossorigin="anonymous"></script>
 	<script src="script.js" async></script>
 </head>
 
@@ -16,116 +18,153 @@
 	
 	<main>
 
-		<section id="home">
+				<section id="home">
 
-			<div id="home-body">
-				<h2>WELCOME!</h2>
-				<p>
-					My name is <span id="name-text">Xevier Turrubiartes</span> and I am a full-stack developer from Texas.<br>
-					<a id="portfolio-link" href="#portfolio"><button id="view-portfolio"><p id="text-arrow">View Portfolio</p><img id="arrow" src="images/arrow.png" width="30" height="30"></button></a>
-				</p>
+					<div id="home-body">
 
-			</div>
-		</section>
+						
+					<div id='welcome-div'>
+						<h2>WELCOME!</h2>
+
+						<p>
+							<div id='welcome-message'>My name is <span id="name-text">Xevier Turrubiartes</span> and I am a full-stack developer from Texas.
+							</div>
+
+							<a id="portfolio-link" href="#portfolio"><button id="view-portfolio"><p id="text-arrow">View Portfolio</p><img id="arrow" src="images/arrow.png" width="30" height="30"></button></a>
+						</p>
+					</div>
+						
+						<!-- Background slideshow -->
+						<!-- <div class="crossfade">
+							<figure></figure>
+							<figure></figure>
+							<figure></figure>
+							<figure></figure>
+							<figure></figure>
+							<figure></figure>
+						</div> -->
+						<!-- Background slideshow -->
+					</div>
+				</section>
 		
 		<div id="navbar">
 			<nav>
 				<div id="links">
 					<!-- <a id="link" href="#home">Home</a> -->
-					<a id="link" href="#about">About</a>
-					<a id="link" href="#portfolio">Portfolio</a>
-					<a id="link" href="#resume">Resume</a>
-					<a id="link" href="#contact">Contact</a>
+					<a class="link" href="#about">About</a>
+					<a class="link" href="#portfolio">Portfolio</a>
+					<a class="link" href="#resume">Resume</a>
+					<a class="link" href="#contact">Contact</a>
 				</div>
 			</nav>
 		</div>
 
-		<section>
-			<h2 id="about">About Myself</h2>
-			<div id="about-myself">
-				<img src="images/me.jpg" alt="myself" class="center-pic">
-		
-				<p>My first experience with web development was on MySpace when I would spend countless hours researching and editing HTML code to make my page stand out from the rest of my friends. I've always had an interest in building and creating things whether it's music or programming projects. I am excited to put my knowledge in web development to good use and make a career out of it.</p>
-				
-				<p>Some of my hobbies outside of programming include:</p>
-			
-					<ul id="hobbies">
-						<li>- playing drums</li>
-						<li>- kick-boxing</li>
-						<li>- drawing</li>
-					</ul>
+				<section>
+					<h2 id="about">About Myself</h2>
+					<div id="about-myself">
+						<img src="images/me.jpg" alt="myself" id="about-me-pic">
 
+						<p>My first experience with web development was on MySpace when I would spend countless hours researching and editing HTML code to make my page stand out from the rest of my friends. I've always had an interest in building and creating things whether it's music or programming projects. I am excited to put my knowledge in web development to good use and make a career out of it.</p>
+						
+						<p>Some of my hobbies outside of programming include:</p>
 					
-					<br>
+							<ul id="hobbies">
+								<li>- photography</li>
+								<li>- playing drums</li>
+								<li>- kick-boxing</li>
+							</ul>
 
-					<p>If you are interested in hiring a new developer for your company or have any projects that I might be able to help you with, don't hesitate to <a href="#contact">contact me!</a></p>
-					<br>
-			</div>
-		</section>
+							
+							<br>
+
+							<p id="portfolio">If you are interested in hiring a new developer for your company or have any projects that I might be able to help you with, don't hesitate to <a href="#contact">contact me!</a></p>
+					</div>
+				</section>
 
 				<section>	
-					<h2 id="portfolio">MY PORTFOLIO</h2>
+					<h2>MY PORTFOLIO</h2>
 					<div class="group">
-
-						<div class="item left">
-							<div class="project">
-								<p class="project-title">Neighbr</p>
-								<p class="project-description">Social media platform specifically meant for posting favors you need help with.</p>
-								<p class="tech-used">Front-end: JavaScript, React, HTML5, CSS3
-									<br>Back-end: JavaScript, Node.js, Express.js, PostgreSQL</p>
-									<p class="repo-links">
-										<a class="repo-live-links" href="https://neighbr.vercel.app/">Live App</a> | 
-										<a class="repo-live-links" href="https://github.com/xeviert/Neighbr">Client Repo</a> | 
-										<a class="repo-live-links" href="https://github.com/xeviert/neighbr-api">Server Repo</a>
-									</p>
-							</div>
-						</div>
-							
 
 						<div class="item right">
 							<div class="project">
-								<p class="project-title">Spaced Repetition</p>
-								<p class="project-description">Italian learning app by repeatedly guessing. Keeps track of number of guesses, correct, and incorrect guesses.</p>
-								<p class="tech-used">Front-end: JavaScript, React, HTML5, CSS3
-									<br>Back-end: JavaScript, Node.js, Express.js, PostgreSQL</p>
-									<p class="repo-links">
-										<a class="repo-live-links" href="spaced-repetition-plum.vercel.app/">Live App</a> |
-										<a class="repo-live-links" href="https://github.com/xeviert/spaced-repetition">Client Repo</a> | 
-										<a class="repo-live-links" href="https://github.com/xeviert/spaced-repetition-api">Server Repo</a>
-									</p>
+								
+								<div class="adjust-img-and-text-left">
+									<div class="text-for-project">
+										<p class="project-title">Neighbr</p>
+										<p class="project-description" id="desc-right">Social media platform specifically meant for posting favors you need help with.</p>
+										<p class="tech-used">Front-end: JavaScript, React, HTML5, CSS3
+											<br>Back-end: JavaScript, Node.js, Express.js, PostgreSQL</p>
+											<p class="repo-links">
+												<a class="repo-live-links" href="https://neighbr.vercel.app/">Live App</a> | 
+												<a class="repo-live-links" href="https://github.com/xeviert/Neighbr">Client Repo</a> | 
+												<a class="repo-live-links" href="https://github.com/xeviert/neighbr-api">Server Repo</a>
+											</p>
+										</div>
+										<img src="images/neighbr-home.png" alt="screenshot of Neighbr" class="project-img-right">
+
+							</div>
 							</div>
 						</div>
 							
 
-						<!-- MASS ITEM STILL NEEDS A LINK TO LIVE APP -->
 						<div class="item left">
 							<div class="project">
-								<p class="project-title">M.A.S.S.</p>
-								<p class="project-description">Mutual Aid & Shared Support; User submits a wishlist and location to trusted admin so admin could deliver on wishlist.</p>
+								<div class="move-img-right">
+									
+									<div class="text-for-project">
+										<p class="project-title">M.A.S.S.</p>
+								<p class="project-description" id="desc-left">Mutual Aid & Shared Support; User submits a wishlist and location to trusted admin so admin could deliver on wishlist.</p>
 								<p class="tech-used">Front-end: JavaScript, React, HTML5, CSS3
 									<br>Back-end: JavaScript, Node.js, Express.js, PostgreSQL</p>
 									<p class="repo-links">
-										<a class="repo-live-links" href="">Live App</a> | 
+										<a class="repo-live-links" href="https://mass-client.vercel.app/">Live App</a> | 
 										<a class="repo-live-links" href="https://github.com/xeviert/mass-client">Client Repo</a> | 
 										<a class="repo-live-links" href="https://github.com/xeviert/mass-api">Server Repo</a>
 									</p>
+								</div>
+								<img src="images/mass-home.png" alt="screenshot of M.A.S.S" class="project-img-left">
 							</div>
-						</div>
-						<!-- MASS ITEM STILL NEEDS A LINK TO LIVE APP -->
+								</div>
+							</div>
 							
-
+							
 						<div class="item right">
 							<div class="project">
-								<p class="project-title">Petful</p>
-								<p class="project-description">Submit your name and wait for your turn to adopt a random cat or dog.</p>
-								<p class="tech-used">Front-end: JavaScript, React, HTML5, CSS3
-									<br>Back-end: JavaScript, Node.js, Express.js, PostgreSQL</p>
-									<p class="repo-links">
-										<a class="repo-live-links" href="https://petful-client-hazel.vercel.app/">Live App</a> | 
-										<a class="repo-live-links" href="https://github.com/xeviert/petful-client">Client Repo</a> | 
-										<a class="repo-live-links" href="https://github.com/xeviert/petful-server">Server Repo</a>
-									</p> 
+								<div class="adjust-img-and-text-left">
+									
+									<div class="text-for-project">
+										<p class="project-title">Spaced Repetition</p>
+										<p class="project-description" id="desc-right">Italian learning app by repeatedly guessing. Keeps track of number of guesses, correct, and incorrect guesses.</p>
+										<p class="tech-used">Front-end: JavaScript, React, HTML5, CSS3
+											<br>Back-end: JavaScript, Node.js, Express.js, PostgreSQL</p>
+											<p class="repo-links">
+												<a class="repo-live-links" href="spaced-repetition-plum.vercel.app/">Live App</a> |
+												<a class="repo-live-links" href="https://github.com/xeviert/spaced-repetition">Client Repo</a> | 
+												<a class="repo-live-links" href="https://github.com/xeviert/spaced-repetition-api">Server Repo</a>
+											</p>
+									</div>
+									<img src="images/spaced-rep.png" alt="screenshot of Spaced-Repetition" class="project-img-right">
+								</div>
 							</div>
+						</div>
+							
+
+						<div class="item left">
+							<div class="project">
+								<div class="move-img-right">
+									<div class="text-for-project">
+										<p class="project-title">Petful</p>
+										<p class="project-description" id="desc-left">Submit your name and wait for your turn to adopt a random cat or dog.</p>
+										<p class="tech-used">Front-end: JavaScript, React, HTML5, CSS3
+											<br>Back-end: JavaScript, Node.js, Express.js, PostgreSQL</p>
+											<p class="repo-links">
+												<a class="repo-live-links" href="https://petful-client-hazel.vercel.app/">Live App</a> | 
+												<a class="repo-live-links" href="https://github.com/xeviert/petful-client">Client Repo</a> | 
+												<a class="repo-live-links" href="https://github.com/xeviert/petful-server">Server Repo</a>
+											</p> 
+										</div>
+										<img src="images/petful.png" alt="screenshot of Petful" class="project-img-left">
+									</div>
 						</div>
 
 					</div>
@@ -134,40 +173,46 @@
 				<section id="resume" >
 					<h2>RESUME</h2>
 
-					<p id="resume-text">Checkout and download my resume.</p>
-					<div  id="resume-window">
-						<object class="pdf-window" data='Xevier-TurrubiartesResume.pdf?#zoom=60' type="application/pdf" >
-							<iframe class="pdf-window" src='Xevier-TurrubiartesResume.pdf?#zoom=60' >
-								<p>This browser does not support .pdf</p>
-							</iframe>
-						</object>
-					</div>
+					<p id="resume-text">Checkout and 
+						<a href="/Xevier-TurrubiartesResume.pdf" download="Xevier-T-Resume">download</a> my resume.</p>
+						<div id='resume-container'>
+							<a href="/Xevier-TurrubiartesResume.pdf" download="Xevier-T-Resume">
+								<img src="images/resume.png" id='resume-img'>
+							</a>
+						</div>
+			
 				</section>
 
 				<section id="contact">
 					<div id="bottom-section">
 
 						<h2>CONTACT ME</h2>	
-						<img src="images/austin.jpg" alt="austin skyline" class="center-pic">
-						
-						<p id="contact-text">I hope to hear from you soon! Please contact or follow me:</p>
-						
-						<div class="contacts">
-							<a class="logos" href="https://github.com/xeviert" target="_blank"><img src="images/GitHub.png" width="100" height="100"></a>
-							<a class="logos" href="https://www.linkedin.com/in/xevierturrubiartes/" target="_blank"><img src="images/linkedin.png" width="100" height="100"></a>
-							<a class="logos" href="mailto:xevierturrubiartes@gmail.com" target="_blank"><img src="images/email.png" width="110" height="110"></a>
+
+						<div id="contact-text">	
+							<p>I hope to hear from you soon! <br> Please contact or follow me:</p>
 						</div>
 						
+						<div class="contacts" style="font-size: 100px;">
+							<a class="logos" href="https://github.com/xeviert" target="_blank">
+								<i class="fab fa-github-square"></i>
+								</a>
+							<a class="logos" href="https://www.linkedin.com/in/xevierturrubiartes/" target="_blank">
+								<i class="fab fa-linkedin"></i>
+							</a>
+							<a class="logos" href="mailto:xevierturrubiartes@gmail.com" target="_blank">
+								<i class="far fa-envelope"></i>
+								</a>
+						</div>
 						
+						<div id='form-background'>
 						<form action="https://formspree.io/f/mayleega" method="POST">
-							<label>Name:</label>
-							<input type="text" name="name">	
-							<label>Email:</label>
-							<input type="text" name="_replyto">
-							<label>Message:</label>
-							<textarea name="message"></textarea>
+							<input type="text" name="name" placeholder="Name">	
+							<input type="text" name="_replyto" placeholder="Email">
+							<textarea name="message" placeholder="Message"></textarea>
 							<button id="btn" type="submit">Send</button>
 						</form>
+						</div>
+
 					</div>
 				</section>
 
