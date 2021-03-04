@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: 'Cardo', serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: clamp(.95rem, 1.8vw, 2rem);
     background-color: #171717;
     line-height: 1.5;
@@ -20,10 +20,11 @@ div, p {
 
 h2 {
     text-align: center;
-    font-family: 'Oswald', sans-serif;
-    color: #ffffff;
-    font-size: clamp(2.8em, 2vw, 2.6rem);
-    margin: .4em 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: clamp(2em, 2vw, 2.6rem);
+    margin: 1em 0;
+    background-color: black;
 }
 
 
@@ -41,16 +42,20 @@ h2 {
 #home-body {
     color: #fff;
     text-align: center;
-    padding-bottom: 10%;
     width: 95%;
     margin: 0 auto;
 }
 
+#welcome {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: clamp(2em, 2vw, 2.6rem);
+    font-weight: bold;
+}
+
 #about-me-pic {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
+    margin-left: 0 auto;
+    width: 100%;
     border-radius: 10px;
 }
 
@@ -62,7 +67,7 @@ h2 {
 #view-portfolio {
     border: 2px solid white;
     width: 90%;
-    margin: 28px auto 0;
+    margin: 4vh auto 0 auto;
     padding: 2px 2px 0px 2px;
     border-radius: 2rem;
     font-size: clamp(1rem, 1.8vw, 2rem);
@@ -113,7 +118,6 @@ h2 {
     text-decoration: none;
     font-size: clamp(1.2em, 1.6vw, 1.6rem);
     color: #fff;
-
 }
 
 .link:visited {
@@ -160,7 +164,7 @@ h2 {
 
 #about-myself {
     width: 89%;
-    margin: 0 auto;
+    margin: 0 auto 2em auto;
     color: white;
 }
 
@@ -185,17 +189,23 @@ a {
 /* --------------- PORTFOLIO --------------- */
 
 
-.group {
+#portfolio-body {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.project {
-    width: 90%;
+.individual-project {
     background-color: #2b2b2b;
-    margin: 2vh auto;
     border-radius: 10px;
+    margin: 1.5em 0;
+    width: 90%;
+}
+
+.project-img-right, .project-img-left { 
+    width: 100%;
+    display: flex;
+    border-radius: 0 0 8px 8px;
 }
 
  /*---text decoration*/
@@ -205,48 +215,34 @@ a {
 }
 
 .project-title {
-    font-weight: bold;
-    margin: 0 0 3vh 0;
-    font-size: clamp(1.1em, 1.1vw, 1.2rem);
+    margin: 0 0 1vh 0;
+    font-size: clamp(1.4rem, .6vw, .6rem);
 }
 
-.adjust-img-and-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .project-description {
-    font-size: clamp(.8em, 1vw, 1em);
+    font-size: clamp(1.1rem, .5vw, .5em);
     text-align: left;
-    line-height: 1.5;
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
 }
 
 .tech-used {
-    font-size: clamp(.7rem, 1vw, 1rem);
-    margin: 30px 0 30px 0;
-    line-height: 1.5;
+    font-size: clamp(.9rem, .2vw, .5rem);
+    margin: 0;
 }
 
 .repo-links {
     text-align: center;
+    margin-top: 1.5rem;
 }
 
 .repo-live-links, .repo-live-links:visited {
     color: rgb(189, 204, 255);
     margin: 0;
-    font-size: clamp(.7em, 1vw, 1.1rem);
+    font-size: clamp(.9rem, .5vw, .6rem);
 }
-
-.project-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    border-radius: 0 0 8px 8px;
-}
-
-
 
 /* --------------- RESUME SECTION --------------- */
 
@@ -305,7 +301,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('/images/slideshow/contact-back.jpg');
+    background-image: url('/images/contact-back.jpg');
     background-size: cover;
 }
 
@@ -322,6 +318,7 @@ input, textarea {
     background-color: transparent;
     padding-left: 1em;
     border-color: rgb(255, 255, 255);
+    color: white;
 }
 
 ::placeholder {
@@ -364,107 +361,110 @@ input:focus, textarea:focus {
 /* --------------- MEDIA QUERY --------------- */
 
 
-@media all and (min-width: 800px) {
+@media (min-width: 500px) {
 
     /* --------------- NAVBAR --------------- */
 
     #links {
-        padding: 2vh 9vh 2vh 20vh;
+        padding: 2vh 4vh 2vh 5vh;
     }
     
     /* --------------- HOME --------------- */
 
-    /* #home-body {
-        width: 40%;
+    #home-body {
         padding-bottom: 15%;
-    } */
+        word-wrap: break-word;
+    }
+
+    #welcome-div {
+        width: 90%;
+    }
 
     #about-me-pic {
-        margin-left: auto;
-        margin-right: auto;
-        width: 60%;
-        border-radius: 10px;
-        opacity: .80;
+        width: 90%;
     }
 
     #view-portfolio {
-        width: 60%;
+        margin-top: 4vh;
+        width: 95%;
     }
 
     /* --------------- ABOUT --------------- */
     
     #about-myself {
-        width: 60%;
+        width: 90%;
     }
 
     #hobbies {
-        width: 25%;
+        width: 43%;
     } 
 
     /* --------------- PORTFOLIO --------------- */
-
-    /* 
-    .group {
-        margin: 0 auto;
-        width: 100%;
-        flex-flow: column wrap;
-        
-    }
-
-    .item {
-        padding: 4vh 0 4vh 0;
-    }
     
-    .right, .left {
-        text-align: left;
+    .individual-project {
+        width: 90%;
     }
 
-
-    .project-img-right {
-        height: 100%;
-        border-radius: 8px 0 0 8px;
-        object-fit: cover;
+    .img-text-right {
+        flex-direction: row;
+        display: flex;
     }
 
-    .project-img-left {
-        height: 100%;
-        border-radius: 0 8px 8px 0;
-        object-fit: cover;
-    } 
-    */
-    
-    .project {
-        width: 60%;
-    }
-
-    .adjust-img-and-text-left {
+    .img-text-left {
         display: flex;
         flex-direction: row-reverse;
-        align-items: center;
-        height: 40vh;
-        justify-content: space-evenly;
-
-    }
-
-    .move-img-right {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        height: 40vh;
-        justify-content: space-evenly;
-
     }
 
     .project-img-right, .project-img-left {
-        width: 20%;
-        margin: 0 0 0 0;
-        justify-content: space-evenly;
+        width: 12rem;
     }
+
+    .project-img-right {
+        border-radius: 8px 0 0 8px;
+    }
+
+    .project-img-left {
+        border-radius: 0 8px 8px 0;
+        
+    }
+
+    /* text for project styling */
+
+    .project-title {
+        margin-bottom: .5rem;
+        font-size: 1rem;
+    }
+
+    .project-description {
+        font-size: .8rem;
+        line-height: 1.5;
+        margin-top: .7rem;
+        margin-bottom: .8rem;
+    }
+
+    .tech-used {
+        font-size: .6rem;
+    }
+
+    .repo-links {
+        margin-top: 1rem;
+    }
+
+    .repo-live-links, 
+    .repo-live-links:visited {
+        font-size: .7rem;
+    }
+
+/*
+    .text-for-project {
+    padding: .7rem;
+}
+    */
 
     /* --------------- PRESUME --------------- */
 
     #resume-container {
-        width: 40%;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -477,18 +477,236 @@ input:focus, textarea:focus {
     /* --------------- CONTACT --------------- */
 
     #contact-text {
-        width: 60%;
+        width: 85%;
     }
 
     .contacts {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
         display: flex;
         justify-content: space-evenly;
     }
 
-    form {
-        width: 60%;
+    #form-background {
+        padding: 2em 0;
     }
 
+    form {
+        width: 90%;
+    }
+
+}
+
+@media (min-width: 600px) {
+
+/* --------------- HOME --------------- */
+
+    #home-body {
+        word-wrap: break-word;
+    }
+
+    #welcome-div {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #view-portfolio {
+        width: 100%;
+        margin-top: 4vh;
+    }
+
+/* --------------- ABOUT --------------- */
+    
+    #about-myself {
+        width: 80%;
+    }
+
+    #hobbies {
+        width: 40%;
+    } 
+    
+/* --------------- PORTFOLIO --------------- */
+
+     .individual-project {
+        width: 80%;
+    }
+
+    .project-img-right, .project-img-left {
+        width: 16rem;
+    }
+
+    /* text for project styling */
+
+    .text-for-project {
+        padding: 1rem;
+    }
+
+    .project-title {
+        margin-bottom: .3rem;
+        font-size: 1.2rem;
+    }
+
+    .tech-used {
+        font-size: .65rem;
+    }
+
+    .repo-links {
+        margin-top: .8rem;
+    }
+
+    .repo-live-links, 
+    .repo-live-links:visited {
+        font-size: .75rem;
+    }
+
+    /* --------------- PRESUME --------------- */
+
+    #resume-container {
+        width: 90%;
+    }
+
+    /* --------------- CONTACT --------------- */
+
+    #contact-text {
+        width: 80%;
+    }
+
+    .contacts {
+        width: 100%;
+    }
+
+    form {
+        width: 80%;
+    }
+}
+
+@media (min-width: 700px) {
+
+#hobbies {
+    width: 36%;
+} 
+
+/* --------------- PORTFOLIO --------------- */
+
+.project-img-right, .project-img-left {
+    width: 20rem;
+}
+
+/* text for project styling */
+
+.text-for-project {
+    padding: 2rem 1rem;
+}
+
+.project-description {
+    font-size: .9rem;
+}
+
+.project-title {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.tech-used {
+    font-size: .65rem;
+}
+
+.repo-links {
+    margin-top: 1rem;
+}
+
+.repo-live-links {
+    font-size: .8rem;
+}
+}
+
+@media (min-width: 900px) {
+
+/* --------------- NAVBAR --------------- */
+
+#links {
+    padding: 2vh 9vh;
+}
+
+.link {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* --------------- HOME --------------- */
+
+
+#welcome-div {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#view-portfolio {
+    margin-top: 4vh;
+}
+/* --------------- ABOUT --------------- */
+    
+    #about-myself {
+        width: 70%;
+    }
+
+    #hobbies {
+        width: 25%;
+    } 
+    
+    
+/* --------------- PORTFOLIO --------------- */
+
+
+.individual-project {
+    width: 70%;
+}
+
+.project-img-right, .project-img-left {
+    width: 20rem;
+}
+
+/* text for project styling */
+
+.text-for-project {
+    padding: 2rem;
+}
+
+.project-title {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.project-description {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.tech-used {
+    font-size: .8rem;
+}
+
+.repo-links {
+    margin-top: 2rem;
+}
+
+.repo-live-links {
+    font-size: 1rem;
+}
+
+/* --------------- PRESUME --------------- */
+
+#resume-container {
+        width: 70%;
+}
+
+/* --------------- CONTACT --------------- */
+
+#contact-text {
+        width: 70%;
+}
+    
+    form {
+        width: 70%;
+    } 
 }

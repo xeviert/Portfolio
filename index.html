@@ -21,36 +21,23 @@
 				<section id="home">
 
 					<div id="home-body">
-
 						
-					<div id='welcome-div'>
-						<h2>WELCOME!</h2>
-
-						<p>
+						<div id='welcome-div'>
+						<div id="welcome">WELCOME!</div>
+						
 							<div id='welcome-message'>My name is <span id="name-text">Xevier Turrubiartes</span> and I am a full-stack developer from Texas.
 							</div>
 
 							<a id="portfolio-link" href="#portfolio"><button id="view-portfolio"><p id="text-arrow">View Portfolio</p><img id="arrow" src="images/arrow.png" width="30" height="30"></button></a>
-						</p>
-					</div>
 						
-						<!-- Background slideshow -->
-						<!-- <div class="crossfade">
-							<figure></figure>
-							<figure></figure>
-							<figure></figure>
-							<figure></figure>
-							<figure></figure>
-							<figure></figure>
-						</div> -->
-						<!-- Background slideshow -->
+					</div>
+
 					</div>
 				</section>
 		
 		<div id="navbar">
 			<nav>
 				<div id="links">
-					<!-- <a id="link" href="#home">Home</a> -->
 					<a class="link" href="#about">About</a>
 					<a class="link" href="#portfolio">Portfolio</a>
 					<a class="link" href="#resume">Resume</a>
@@ -83,98 +70,100 @@
 
 				<section>	
 					<h2>MY PORTFOLIO</h2>
-					<div class="group">
+					<div id="portfolio-body">
 
-						<div class="item right">
-							<div class="project">
-								
-								<div class="adjust-img-and-text-left">
+						<div class="individual-project">		
+								<div class="img-text-left">
 									<div class="text-for-project">
-										<p class="project-title">Neighbr</p>
-										<p class="project-description" id="desc-right">Social media platform specifically meant for posting favors you need help with.</p>
-										<p class="tech-used">Front-end: JavaScript, React, HTML5, CSS3
-											<br>Back-end: JavaScript, Node.js, Express.js, PostgreSQL</p>
-											<p class="repo-links">
-												<a class="repo-live-links" href="https://neighbr.vercel.app/">Live App</a> | 
-												<a class="repo-live-links" href="https://github.com/xeviert/Neighbr">Client Repo</a> | 
-												<a class="repo-live-links" href="https://github.com/xeviert/neighbr-api">Server Repo</a>
-											</p>
+										<h4 class="project-title">Neighbr</h4>
+										<p class="project-description">
+											Online bulletin board meant for users to post favors and other things they need help with.
+										</p>
+										<p class="tech-used">Front-end: JavaScript, React, HTML5, CSS3</p>
+										<p class="tech-used">Back-end: JavaScript, Node.js, Express.js, PostgreSQL</p>
+										<div class="repo-links">
+											<a class="repo-live-links" href="https://neighbr.vercel.app/">
+												Live App</a> | 
+											<a class="repo-live-links" href="https://github.com/xeviert/Neighbr">
+												Client Repo</a> | 
+											<a class="repo-live-links" href="https://github.com/xeviert/neighbr-api">
+												Server Repo</a>
 										</div>
-										<img src="images/neighbr-home.png" alt="screenshot of Neighbr" class="project-img-right">
-
-							</div>
-							</div>
+									</div>
+									<img src="images/neighbr-home.png" alt="screenshot of Neighbr" class="project-img-right">
+								</div>
 						</div>
-							
-
-						<div class="item left">
-							<div class="project">
-								<div class="move-img-right">
-									
-									<div class="text-for-project">
-										<p class="project-title">M.A.S.S.</p>
-								<p class="project-description" id="desc-left">Mutual Aid & Shared Support; User submits a wishlist and location to trusted admin so admin could deliver on wishlist.</p>
-								<p class="tech-used">Front-end: JavaScript, React, HTML5, CSS3
-									<br>Back-end: JavaScript, Node.js, Express.js, PostgreSQL</p>
-									<p class="repo-links">
-										<a class="repo-live-links" href="https://mass-client.vercel.app/">Live App</a> | 
-										<a class="repo-live-links" href="https://github.com/xeviert/mass-client">Client Repo</a> | 
-										<a class="repo-live-links" href="https://github.com/xeviert/mass-api">Server Repo</a>
-									</p>
+	
+						<div class="individual-project">
+							<div class="img-text-right">
+								<div class="text-for-project">
+									<h4 class="project-title">M.A.S.S.</h4>
+									<p class="project-description">
+										Mutual Aid & Shared Support; User submits a wishlist and location to trusted admin so admin could deliver on wishlist.</p>
+									<p class="tech-used">Front-end: JavaScript, React, HTML5, CSS3</p>
+									<p class="tech-used">Back-end: JavaScript, Node.js, Express.js, PostgreSQL</p>
+									<div class="repo-links">
+										<a class="repo-live-links" href="https://mass-client.vercel.app/">
+											Live App</a> | 
+										<a class="repo-live-links" href="https://github.com/xeviert/mass-client">
+											Client Repo</a> | 
+										<a class="repo-live-links" href="https://github.com/xeviert/mass-api">
+											Server Repo</a>
+									</div>
 								</div>
 								<img src="images/mass-home.png" alt="screenshot of M.A.S.S" class="project-img-left">
 							</div>
-								</div>
-							</div>
-							
-							
-						<div class="item right">
-							<div class="project">
-								<div class="adjust-img-and-text-left">
-									
-									<div class="text-for-project">
-										<p class="project-title">Spaced Repetition</p>
-										<p class="project-description" id="desc-right">Italian learning app by repeatedly guessing. Keeps track of number of guesses, correct, and incorrect guesses.</p>
-										<p class="tech-used">Front-end: JavaScript, React, HTML5, CSS3
-											<br>Back-end: JavaScript, Node.js, Express.js, PostgreSQL</p>
-											<p class="repo-links">
-												<a class="repo-live-links" href="spaced-repetition-plum.vercel.app/">Live App</a> |
-												<a class="repo-live-links" href="https://github.com/xeviert/spaced-repetition">Client Repo</a> | 
-												<a class="repo-live-links" href="https://github.com/xeviert/spaced-repetition-api">Server Repo</a>
-											</p>
+						</div>
+													
+						<div class="individual-project">
+							<div class="img-text-left">
+								<div class="text-for-project">
+									<h4 class="project-title">Spaced Repetition</h4>
+									<p class="project-description">
+										Italian learning app by repeatedly guessing. Keeps track of number of guesses, correct, and incorrect guesses.</p>
+									<p class="tech-used">Front-end: JavaScript, React, HTML5, CSS3</p>
+									<p class="tech-used">Back-end: JavaScript, Node.js, Express.js, PostgreSQL</p>
+									<div class="repo-links">
+										<a class="repo-live-links" href="spaced-repetition-plum.vercel.app/">
+											Live App</a> |
+										<a class="repo-live-links" href="https://github.com/xeviert/spaced-repetition">
+											Client Repo</a> | 
+										<a class="repo-live-links" href="https://github.com/xeviert/spaced-repetition-api">
+											Server Repo</a>
 									</div>
-									<img src="images/spaced-rep.png" alt="screenshot of Spaced-Repetition" class="project-img-right">
 								</div>
+								<img src="images/spaced-rep.png" alt="screenshot of Spaced-Repetition" class="project-img-right">
 							</div>
 						</div>
 							
-
-						<div class="item left">
-							<div class="project">
-								<div class="move-img-right">
+						<div class="individual-project">
+								<div class="img-text-right">
 									<div class="text-for-project">
-										<p class="project-title">Petful</p>
-										<p class="project-description" id="desc-left">Submit your name and wait for your turn to adopt a random cat or dog.</p>
-										<p class="tech-used">Front-end: JavaScript, React, HTML5, CSS3
-											<br>Back-end: JavaScript, Node.js, Express.js, PostgreSQL</p>
-											<p class="repo-links">
-												<a class="repo-live-links" href="https://petful-client-hazel.vercel.app/">Live App</a> | 
-												<a class="repo-live-links" href="https://github.com/xeviert/petful-client">Client Repo</a> | 
-												<a class="repo-live-links" href="https://github.com/xeviert/petful-server">Server Repo</a>
-											</p> 
-										</div>
-										<img src="images/petful.png" alt="screenshot of Petful" class="project-img-left">
+										<h4 class="project-title">Petful</h4>
+										<p class="project-description">
+											Pet adoption site. User submits their name and waits in line for others to adopt. Once it's user's turn, they get to adopt a random cat or dog.</p>
+										<p class="tech-used">Front-end: JavaScript, React, HTML5, CSS3</p>
+										<p class="tech-used">Back-end: JavaScript, Node.js, Express.js</p>
+										<div class="repo-links">
+											<a class="repo-live-links" href="https://petful-client-hazel.vercel.app/">
+												Live App</a> | 
+											<a class="repo-live-links" href="https://github.com/xeviert/petful-client">
+												Client Repo</a> | 
+											<a class="repo-live-links" href="https://github.com/xeviert/petful-server">
+												Server Repo</a>
+										</div> 
 									</div>
+									<img src="images/petful.png" alt="screenshot of Petful" class="project-img-left">
+								</div>
 						</div>
 
-					</div>
 				</section>
 			
 				<section id="resume" >
 					<h2>RESUME</h2>
 
-					<p id="resume-text">Checkout and 
-						<a href="/Xevier-TurrubiartesResume.pdf" download="Xevier-T-Resume">download</a> my resume.</p>
+					<p id="resume-text">Click 
+						<a href="/Xevier-TurrubiartesResume.pdf" download="Xevier-T-Resume">here</a> or my resume to download.</p>
 						<div id='resume-container'>
 							<a href="/Xevier-TurrubiartesResume.pdf" download="Xevier-T-Resume">
 								<img src="images/resume.png" id='resume-img'>
