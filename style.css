@@ -69,7 +69,7 @@ h2 {
     width: 90%;
     margin: 4vh auto 0 auto;
     padding: 2px 2px 0px 2px;
-    border-radius: 2rem;
+    border-radius: 3.5rem;
     font-size: clamp(1rem, 1.8vw, 2rem);
     background-color: rgb(255, 255, 255);
     cursor: pointer;
@@ -311,7 +311,7 @@ form {
 }
 
 input, textarea {
-    width: 94%;
+    width: 96%;
     margin-bottom: 1em;
     border-style: solid;
     border-width: 2px;
@@ -361,7 +361,7 @@ input:focus, textarea:focus {
 /* --------------- MEDIA QUERY --------------- */
 
 
-@media (min-width: 500px) {
+@media (min-width: 650px) {
 
     /* --------------- NAVBAR --------------- */
 
@@ -374,14 +374,6 @@ input:focus, textarea:focus {
     #home-body {
         padding-bottom: 15%;
         word-wrap: break-word;
-    }
-
-    #welcome-div {
-        width: 90%;
-    }
-
-    #about-me-pic {
-        width: 90%;
     }
 
     #view-portfolio {
@@ -416,7 +408,7 @@ input:focus, textarea:focus {
     }
 
     .project-img-right, .project-img-left {
-        width: 12rem;
+        width: 18rem;
     }
 
     .project-img-right {
@@ -497,7 +489,7 @@ input:focus, textarea:focus {
 
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
 
 /* --------------- HOME --------------- */
 
@@ -506,7 +498,7 @@ input:focus, textarea:focus {
     }
 
     #welcome-div {
-        width: 80%;
+        width: 93%;
         margin: 0 auto;
     }
 
@@ -518,17 +510,17 @@ input:focus, textarea:focus {
 /* --------------- ABOUT --------------- */
     
     #about-myself {
-        width: 80%;
+        width: 90%;
     }
 
     #hobbies {
-        width: 40%;
+        width: 30%;
     } 
     
 /* --------------- PORTFOLIO --------------- */
 
      .individual-project {
-        width: 80%;
+        width: 90%;
     }
 
     .project-img-right, .project-img-left {
@@ -568,7 +560,7 @@ input:focus, textarea:focus {
     /* --------------- CONTACT --------------- */
 
     #contact-text {
-        width: 80%;
+        width: 90%;
     }
 
     .contacts {
@@ -576,15 +568,23 @@ input:focus, textarea:focus {
     }
 
     form {
-        width: 80%;
+        width: 90%;
+    }
+
+    input, textarea {
+        width: 97%;
     }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
 
-#hobbies {
-    width: 36%;
-} 
+    #about-myself {
+        width: 90%;
+    }
+
+    #hobbies {
+        width: 25%;
+    } 
 
 /* --------------- PORTFOLIO --------------- */
 
@@ -618,9 +618,11 @@ input:focus, textarea:focus {
 .repo-live-links {
     font-size: .8rem;
 }
+
+
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1100px) {
 
 /* --------------- NAVBAR --------------- */
 
@@ -637,7 +639,7 @@ input:focus, textarea:focus {
 
 
 #welcome-div {
-    width: 70%;
+    width: 88%;
     margin: 0 auto;
 }
 
@@ -647,11 +649,11 @@ input:focus, textarea:focus {
 /* --------------- ABOUT --------------- */
     
     #about-myself {
-        width: 70%;
+        width: 85%;
     }
 
     #hobbies {
-        width: 25%;
+        width: 20%;
     } 
     
     
@@ -659,11 +661,11 @@ input:focus, textarea:focus {
 
 
 .individual-project {
-    width: 70%;
+    width: 85%;
 }
 
 .project-img-right, .project-img-left {
-    width: 20rem;
+    width: 24.5rem;
 }
 
 /* text for project styling */
@@ -697,16 +699,78 @@ input:focus, textarea:focus {
 /* --------------- PRESUME --------------- */
 
 #resume-container {
-        width: 70%;
+        width: 85%;
 }
 
 /* --------------- CONTACT --------------- */
 
 #contact-text {
-        width: 70%;
+        width: 85%;
 }
     
     form {
-        width: 70%;
+        width: 85%;
     } 
+}
+
+@media (min-width: 1200px) {
+
+    .individual-project {
+        width: 80%;
+    }
+
+    .project-img-right, .project-img-left {
+        width: 26rem;
+    }
+    
+}
+
+@media (min-width: 1300px) {
+
+    #welcome-div {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+
+
+    /* --------------- ABOUT --------------- */
+    
+    #about-myself {
+        width: 70%;
+    }
+
+    #hobbies {
+        width: 15%;
+    } 
+
+    /* --------------- portfolio --------------- */
+
+    .individual-project {
+        width: 70%;
+    }
+    
+    /* .project-img-right, .project-img-left {
+        width: 24rem;
+    } */
+
+    /* --------------- RESUME --------------- */
+
+    #resume-container {
+        width: 70%;
+    }
+
+    /* --------------- CONTACT --------------- */
+
+    #contact-text {
+        width: 70%;
+    }
+
+    .contacts {
+        width: 100%;
+    }
+
+    form {
+        width: 70%;
+    }
 }
