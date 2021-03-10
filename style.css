@@ -69,7 +69,7 @@ h2 {
     width: 90%;
     margin: 4vh auto 0 auto;
     padding: 2px 2px 0px 2px;
-    border-radius: 3.5rem;
+    border-radius: 4rem;
     font-size: clamp(1rem, 1.8vw, 2rem);
     background-color: rgb(255, 255, 255);
     cursor: pointer;
@@ -96,6 +96,11 @@ h2 {
 #view-portfolio:hover {
     border-color: rgb(181, 198, 253);
     background-color: rgb(181, 198, 253);
+}
+
+#home-img {
+    width: 95%;
+    margin-top: 3em;
 }
 
 /* --------------- NAVBAR ---------------  */
@@ -195,6 +200,28 @@ a {
     align-items: center;
 }
 
+#logos{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: -1;
+}
+
+.logo {
+    width: 40%;
+    -webkit-filter: invert(100%);
+}
+
+
+.container-logo {
+    margin: .5vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
 .individual-project {
     background-color: #2b2b2b;
     border-radius: 10px;
@@ -287,11 +314,18 @@ img {
     width: 90%;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
 }
 
-.logos {
-    margin: 0 2vh;
+.logo-link {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-logo {
+    width: 80%;
+    -webkit-filter: invert(100%);
+    margin: 0;
 }
 
 #form-background {
@@ -311,7 +345,7 @@ form {
 }
 
 input, textarea {
-    width: 96%;
+    width: 94%;
     margin-bottom: 1em;
     border-style: solid;
     border-width: 2px;
@@ -372,7 +406,6 @@ input:focus, textarea:focus {
     /* --------------- HOME --------------- */
 
     #home-body {
-        padding-bottom: 15%;
         word-wrap: break-word;
     }
 
@@ -392,6 +425,10 @@ input:focus, textarea:focus {
     } 
 
     /* --------------- PORTFOLIO --------------- */
+
+    #logos{
+        width: 90%;
+    }
     
     .individual-project {
         width: 90%;
@@ -472,13 +509,6 @@ input:focus, textarea:focus {
         width: 85%;
     }
 
-    .contacts {
-        width: 100%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-evenly;
-    }
-
     #form-background {
         padding: 2em 0;
     }
@@ -511,10 +541,17 @@ input:focus, textarea:focus {
     
     #about-myself {
         width: 90%;
+        margin-bottom: 7rem;
+    }
+    
+    #about-me-pic {
+        width: 48%;
+        float: left;
+        margin-right: 1rem;
     }
 
     #hobbies {
-        width: 30%;
+        margin-right: 10rem;
     } 
     
 /* --------------- PORTFOLIO --------------- */
@@ -554,7 +591,11 @@ input:focus, textarea:focus {
     /* --------------- PRESUME --------------- */
 
     #resume-container {
-        width: 90%;
+        width: 100%;
+    }
+
+    #resume-img {
+        width: 50%;
     }
 
     /* --------------- CONTACT --------------- */
@@ -582,9 +623,9 @@ input:focus, textarea:focus {
         width: 90%;
     }
 
-    #hobbies {
-        width: 25%;
-    } 
+    #home-img {
+    width: 80%;
+    }
 
 /* --------------- PORTFOLIO --------------- */
 
@@ -651,14 +692,13 @@ input:focus, textarea:focus {
     #about-myself {
         width: 85%;
     }
-
-    #hobbies {
-        width: 20%;
-    } 
     
     
 /* --------------- PORTFOLIO --------------- */
 
+#logos{
+    width: 85%;
+}
 
 .individual-project {
     width: 85%;
@@ -696,11 +736,6 @@ input:focus, textarea:focus {
     font-size: 1rem;
 }
 
-/* --------------- PRESUME --------------- */
-
-#resume-container {
-        width: 85%;
-}
 
 /* --------------- CONTACT --------------- */
 
@@ -708,12 +743,16 @@ input:focus, textarea:focus {
         width: 85%;
 }
     
-    form {
-        width: 85%;
-    } 
+form {
+    width: 85%;
+} 
 }
 
 @media (min-width: 1200px) {
+
+    #logos{
+        width: 80%;
+    }
 
     .individual-project {
         width: 80%;
@@ -732,6 +771,11 @@ input:focus, textarea:focus {
         margin: 0 auto;
     }
 
+    #home-img {
+        width: 50%;
+        height: 40vh;
+        margin: 2em auto 0 auto;
+    }
 
 
     /* --------------- ABOUT --------------- */
@@ -741,10 +785,14 @@ input:focus, textarea:focus {
     }
 
     #hobbies {
-        width: 15%;
+        width: 19%;
     } 
 
     /* --------------- portfolio --------------- */
+
+    #logos{
+        width: 70%;
+    }
 
     .individual-project {
         width: 70%;
@@ -754,6 +802,9 @@ input:focus, textarea:focus {
         width: 24rem;
     } */
 
+    .text-for-project {
+        padding: 3rem;
+    }
     /* --------------- RESUME --------------- */
 
     #resume-container {
@@ -767,7 +818,7 @@ input:focus, textarea:focus {
     }
 
     .contacts {
-        width: 100%;
+        width: 90%;
     }
 
     form {
